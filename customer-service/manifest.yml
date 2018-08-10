@@ -1,0 +1,8 @@
+applications:
+- name: customer-service
+  memory: 756M
+  instances: 1
+  path: target/customer-service.jar
+  buildpack: java_buildpack
+  services:
+  - service-registry
